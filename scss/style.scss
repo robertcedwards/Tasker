@@ -1,0 +1,51 @@
+@import "app.scss";
+html{
+	body{ 
+	section{ @include grid-row;
+		ul{ @include grid-column(10); @include panel;
+			li{ @include grid-column(2);
+				input{}
+				label{}
+				a{
+					@include button-base;
+					@include button-size;
+					@include button-style;
+					@include radius;
+					@include single-transition;
+				}
+			}
+			
+		}
+			section{
+				@include grid-row;
+				padding:.5em;
+
+				span{
+						a.save_sessions {
+							@include grid-column(12);
+							@include button-base;
+							@include button-size;
+							@include button-style;
+							@include radius;
+							@include single-transition;
+						}
+					}
+				}		
+
+	}
+	form{ @include grid-column(12);
+			label{}
+			input{}
+			section{
+				button{  
+					@include button-base;
+  					@include button-size;
+  					@include button-style;
+  					@include radius;
+  					@include single-transition;
+  					@include inset-shadow(#000);
+					}
+			}
+		}
+	}
+}
